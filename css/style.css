@@ -53,4 +53,19 @@
 .title {
     margin: 0; /* Remove margens */
     padding: 0; /* Remove espaçamento interno */
+
+}
+
+@media (min-width: 768px) {
+    .container2 {
+        flex-direction: row; /* Linha em desktop */
+    }
+    
+    .video {
+        width: 30%; /* Volta ao tamanho original em telas maiores */
+    }
+    
+    .form-header {
+        width: 70%; /* Volta ao tamanho original em telas maiores */
+    }
 }
