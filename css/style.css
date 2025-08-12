@@ -1,79 +1,56 @@
 .container {
     position: relative;
     width: 100%;
-    height: auto; /* Alterado para auto para se adaptar ao conteúdo */
+    height: 20%;
 }
 
 .form-image2 {
     position: relative;
     width: 100%;
-    height: auto; /* Adicionado para melhor responsividade */
 }
 
 .form-image2 img {
     width: 100%;
-    height: auto; /* Recomendo descomentar isso */
+    /*height: auto;*/
     display: block;
-    max-width: 100%; /* Garante que não ultrapasse o container */
 }
 
 .form-image {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 10px; /* Ajuste conforme necessário */
+    left: 10px; /* Ajuste conforme necessário */
     z-index: 1;
 }
 
 .form-image img {
-    width: 50px;
+    width: 50px; /* Mantive seu tamanho original */
     height: 50px;
-    max-width: 100%; /* Para ser responsivo */
 }
 
 .container2 {
     display: flex;
-    flex-direction: column; /* Coluna em mobile */
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; /* Centraliza verticalmente */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
     margin: 0 auto;
-    padding: 20px;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px; /* Limite máximo de largura */
+    padding: 20px; /* Espaço interno do container */
+    gap: 20px; /* Remove espaço entre os filhos */
 }
 
 .video {
-    width: 100%; /* Ocupa toda a largura em mobile */
-    max-width: 100%; /* Não ultrapassa o container */
-    margin: 0;
-    padding: 0;
+    max-width: 30%; /* Largura do vídeo */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamento interno */
 }
 
 .form-header {
-    width: 100%; /* Ocupa toda a largura em mobile */
-    margin: 0;
-    padding: 0;
+    max-width: 70%; /* Largura do texto */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamento interno */
     text-align: left;
 }
 
 .title {
-    margin: 0;
-    padding: 0;
-    font-size: clamp(1rem, 2vw, 2rem); /* Tamanho de fonte responsivo */
-}
-
-/* Media Queries para diferentes tamanhos de tela */
-@media (min-width: 768px) {
-    .container2 {
-        flex-direction: row; /* Linha em desktop */
-    }
-    
-    .video {
-        width: 30%; /* Volta ao tamanho original em telas maiores */
-    }
-    
-    .form-header {
-        width: 70%; /* Volta ao tamanho original em telas maiores */
-    }
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamento interno */
 }
